@@ -1,4 +1,4 @@
-export default function Calculate({ Calculate }) {
+export default function Evaluate({ compute }) {
   return (
     <div className="w-full">
       <button className=" w-full flex space-x-10  py-4  justify-center items-center bg-lime rounded-full">

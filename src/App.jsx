@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Calculate from "./Components/Calculate";
+
 import Header from "./Components/Header";
 import Amount from "./Components/Amount";
 import Term from "./Components/Term";
 import Rate from "./Components/Rate";
 import Type from "./Components/Type";
+import Evaluate from "./Components/Evaluate";
 
 export default function App() {
   const [type, setType] = useState("");
@@ -12,7 +13,7 @@ export default function App() {
   const [term, setTerm] = useState("");
   const [rate, setRate] = useState("");
   function Clear() {}
-  function Calculate() {}
+  function Compute() {}
   return (
     <div className="w-screen h-screen bg-slate-100 md:last:flex md:items-center md:justify-center ">
       <div className="h-screen w-screen md:w-10/12 md:h-2/3 bg-white flex flex-col md:flex-row md:rounded-r-[28px] ">
@@ -26,7 +27,7 @@ export default function App() {
             <Term setTerm={setTerm} />
             <Rate setRate={setRate} />
             <Type type={type} setType={setType} />
-            <Calculate Calculate={Calculate} />
+            <Evaluate compute={Compute} />
           </div>
         </div>
 
