@@ -1,4 +1,6 @@
-export default function Type({ type, setType }) {
+import Error from "./Error";
+
+export default function Type({ error, setError, type, setType }) {
   const onOptionChange = (e) => {
     setType(e.target.value);
   };
@@ -8,8 +10,10 @@ export default function Type({ type, setType }) {
       <div className="flex  flex-col space-y-2 w-full ">
         <div
           className={` ${
-            type === "replacement" ? "bg-red-100 " : ""
-          } p-4 flex border-[1px] rounded-md border-slate-400`}
+            type === "replacement" ? "bg-green-100 " : ""
+          } p-4 flex border-[1px] rounded-md ${
+            type === "replacement" ? "border-lime" : "border-slate-400"
+          }`}
         >
           <input
             type="radio"
@@ -30,8 +34,10 @@ export default function Type({ type, setType }) {
 
         <div
           className={` ${
-            type === "interest" ? "bg-red-100 " : ""
-          } p-4 flex border-[1px] rounded-md border-slate-400`}
+            type === "interest" ? "bg-green-100 " : ""
+          } p-4 flex border-[1px] rounded-md ${
+            type === "interest" ? "border-lime" : "border-slate-400"
+          }`}
         >
           <input
             type="radio"
@@ -50,6 +56,7 @@ export default function Type({ type, setType }) {
           </label>
         </div>
       </div>
+      {error && <Error setError={setError} />}
     </div>
   );
 }
