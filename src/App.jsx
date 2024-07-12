@@ -81,7 +81,7 @@ export default function App() {
         <div className="bg-white w-full h-full mb-5 md:mb-0 p-8">
           <div
             className="flex w-full h-full
-         flex-col space-y-8"
+         flex-col space-y-8 md:space-y-2"
           >
             {evalError && <EvalError setError={setEvalError} />}
             <Header clear={Clear} />

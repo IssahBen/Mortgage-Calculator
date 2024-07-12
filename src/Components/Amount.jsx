@@ -14,9 +14,9 @@ export default function Amount({ error, setError, amount, setAmount }) {
         }`}
       >
         <div
-          className={`flex justify-center items-center p-2 w-1/12 ${
+          className={`flex justify-center items-center p-1 w-1/12 ${
             amount !== "" ? "bg-lime" : error ? "bg-red-500" : "bg-blue-100"
-          }  font-bold text-slate-500 text-2xl`}
+          }  font-bold text-slate-500 text-2xl md:text-lg`}
         >
           $
         </div>

@@ -18,9 +18,9 @@ export default function Term({ error, setError, term, setTerm }) {
           className=" pl-5 w-5/6 text-xl font-normal text-slate-900"
         />
         <div
-          className={`flex justify-center items-center p-2 w-1/6 ${
+          className={`flex justify-center items-center p-1 w-1/6 ${
             error ? "bg-red-500" : "bg-blue-100"
-          }  font-normal text-slate-500 text-2xl`}
+          }  font-normal text-slate-500 text-2xl md:text-lg`}
         >
           years
         </div>

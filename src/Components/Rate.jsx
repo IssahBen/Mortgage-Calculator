@@ -18,9 +18,9 @@ export default function Rate({ error, setError, rate, setRate }) {
           className=" pl-5 w-11/12 text-xl font-normal text-slate-900"
         />
         <div
-          className={`flex justify-center items-center p-2 w-1/12 ${
+          className={`flex justify-center items-center p-1 w-1/12 ${
             error ? "bg-red-500" : "bg-blue-100"
-          }  font-bold text-slate-500 text-2xl`}
+          }  font-bold text-slate-500 text-2xl md:text-lg`}
         >
           %
         </div>

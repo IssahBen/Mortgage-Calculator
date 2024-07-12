@@ -3,7 +3,7 @@ export default function Evaluate({ compute }) {
     <div className="w-full">
       <button
         onClick={compute}
-        className=" w-full flex space-x-10  py-4  justify-center items-center bg-lime rounded-full hover:bg-yellow-200"
+        className=" w-full flex space-x-10  py-2 px-1  justify-center items-center bg-lime rounded-full hover:bg-yellow-200"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

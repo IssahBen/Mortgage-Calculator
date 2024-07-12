@@ -11,7 +11,7 @@ export default function Type({ error, setError, type, setType }) {
         <div
           className={` ${
             type === "replacement" ? "bg-green-100 " : ""
-          } p-4 flex border-[1px] rounded-md ${
+          } p-1 flex border-[1px] rounded-md ${
             type === "replacement" ? "border-lime" : "border-slate-400"
           }`}
         >
@@ -35,7 +35,7 @@ export default function Type({ error, setError, type, setType }) {
         <div
           className={` ${
             type === "interest" ? "bg-green-100 " : ""
-          } p-4 flex border-[1px] rounded-md ${
+          } p-1 flex border-[1px] rounded-md ${
             type === "interest" ? "border-lime" : "border-slate-400"
           }`}
         >
